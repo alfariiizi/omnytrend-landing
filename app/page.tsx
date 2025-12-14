@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
       {/* Top Glow */}
-      <div className="pointer-events-none absolute top-0 right-0 left-0 h-[800px] bg-[radial-gradient(circle_600px_at_50%_-100px,#1d4ed830,transparent)]"></div>
+      <div className="pointer-events-none absolute top-0 right-0 left-0 h-[800px] bg-[radial-gradient(circle_800px_at_50%_-100px,#1d4ed830,transparent)]"></div>
 
       <Hero />
       <Stats />

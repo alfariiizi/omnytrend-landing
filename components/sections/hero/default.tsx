@@ -71,7 +71,7 @@ export default function Hero({
   return (
     <Section
       className={cn(
-        "fade-bottom mt-20 overflow-hidden bg-transparent md:mt-0",
+        "fade-bottom mt-20 overflow-hidden bg-transparent md:mt-10",
         className,
       )}
     >
