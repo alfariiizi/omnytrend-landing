@@ -18,7 +18,7 @@ export function TestimonialsSection({ title, description, testimonials, classNam
         <section className={cn("bg-background text-foreground", "px-0 py-12 sm:py-24 md:py-32", className)}>
             <div className="max-w-container mx-auto flex flex-col items-center gap-4 text-center sm:gap-16">
                 <div className="flex flex-col items-center gap-4 px-4 sm:gap-8">
-                    <h2 className="max-w-[720px] text-3xl leading-tight font-semibold sm:text-5xl sm:leading-tight">{title}</h2>
+                    <h2 className="max-w-[720px] text-3xl leading-tight font-bold sm:text-5xl sm:leading-tight">{title}</h2>
                     <p className="text-muted-foreground max-w-[600px] text-base font-medium">{description}</p>
                 </div>
 
