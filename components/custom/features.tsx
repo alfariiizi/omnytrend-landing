@@ -7,9 +7,9 @@ const FeaturesCustom: React.FC = () => {
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
         {/* Feature 1 */}
         <div className="glass-card group relative overflow-hidden rounded-2xl p-10 transition-all hover:-translate-y-2">
-          <div className="bg-brand-blue pointer-events-none absolute top-0 right-0 h-32 w-32 rounded-full opacity-10 blur-[80px]"></div>
+          <div className="bg-brand pointer-events-none absolute top-0 right-0 h-32 w-32 rounded-full opacity-10 blur-[80px]"></div>
 
-          <div className="bg-brand-blue/10 text-brand-blue mb-6 inline-flex items-center justify-center rounded-xl p-3">
+          <div className="bg-brand/10 text-brand mb-6 inline-flex items-center justify-center rounded-xl p-3">
             <MessageSquare size={24} />
           </div>
 
@@ -22,10 +22,10 @@ const FeaturesCustom: React.FC = () => {
           </p>
 
           {/* Mockup Chat */}
-          <div className="group-hover:border-brand-blue/30 relative h-64 overflow-hidden rounded-xl border border-white/10 bg-[#0B1120] p-4 transition-colors">
+          <div className="group-hover:border-brand/30 relative h-64 overflow-hidden rounded-xl border-2 border-white/10 bg-[#0B1120] p-4 transition-colors">
             <div className="space-y-4">
               <div className="animate-slide-in-left flex items-start gap-3">
-                <div className="bg-brand-blue/20 text-brand-blue flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold">
+                <div className="bg-brand/20 text-brand flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold">
                   U
                 </div>
                 <div className="rounded-2xl rounded-tl-none bg-white/5 p-3 text-sm text-gray-300">
@@ -36,10 +36,10 @@ const FeaturesCustom: React.FC = () => {
                 className="animate-slide-in-right flex flex-row-reverse items-start gap-3"
                 style={{ animationDelay: "0.5s" }}
               >
-                <div className="from-brand-teal to-brand-blue flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-xs font-bold text-black shadow-lg">
+                <div className="from-brand-teal to-brand flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-xs font-bold text-black shadow-lg">
                   AI
                 </div>
-                <div className="bg-brand-blue/10 border-brand-blue/20 rounded-2xl rounded-tr-none border p-3 text-sm text-gray-300">
+                <div className="bg-brand/10 border-brand/20 rounded-2xl rounded-tr-none border p-3 text-sm text-gray-300">
                   <span className="text-brand-teal mb-1 block font-semibold">
                     Trending Naik 15% 📈
                   </span>
@@ -68,7 +68,7 @@ const FeaturesCustom: React.FC = () => {
           </p>
 
           {/* Mockup Bars */}
-          <div className="group-hover:border-brand-purple/30 relative grid h-64 grid-cols-2 gap-4 overflow-hidden rounded-xl border border-white/10 bg-[#0B1120] p-5 transition-colors">
+          <div className="group-hover:border-brand-purple/30 relative grid h-64 grid-cols-2 gap-4 overflow-hidden rounded-xl border-2 border-white/10 bg-[#0B1120] p-5 transition-colors">
             {[1, 2].map((i) => (
               <div
                 key={i}
