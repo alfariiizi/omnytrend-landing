@@ -68,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ colorScheme: "dark" }} className="dark">
       <body className={`${jakarta.className} bg-background antialiased`}>
+        <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

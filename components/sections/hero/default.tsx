@@ -34,6 +34,7 @@ interface HeroProps {
 }
 
 export default function Hero({
+  title = "",
   description = "Cukup tanya, dan biarkan AI menganalisis produk untukmu — mulai dari tren, performa, hingga rekomendasi strategi penjualan.",
   mockup = <ScreenshotCustom />,
   badge = (
@@ -70,11 +71,11 @@ export default function Hero({
   return (
     <Section
       className={cn(
-        "fade-bottom overflow-hidden bg-transparent pb-0 sm:pb-0 md:pb-0",
+        "fade-bottom mt-20 overflow-hidden bg-transparent md:mt-0",
         className,
       )}
     >
-      <div className="max-w-container mx-auto -mt-10 flex flex-col gap-12 pt-0 sm:gap-24">
+      <div className="max-w-container mx-auto -mt-10 flex flex-col gap-12 pt-0">
         <div className="flex flex-col items-center gap-6 text-center">
           {badge !== false && badge}
           <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-3xl leading-tight font-bold tracking-tight text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl sm:leading-tight sm:tracking-tight md:text-7xl md:leading-tight">
@@ -118,18 +119,18 @@ export default function Hero({
               Hanya Butuh 2 Menit
             </span>
           </h1>
-          <p className="animate-appear text-muted-foreground relative z-10 mb-10 max-w-2xl text-lg leading-relaxed font-medium opacity-0 delay-100">
+          <p className="animate-appear text-muted-foreground relative z-10 mb-4 max-w-sm text-sm leading-relaxed font-medium opacity-0 delay-100 md:mb-10 md:max-w-2xl md:text-lg">
             {description}
           </p>
           {buttons !== false && buttons.length > 0 && (
-            <div className="animate-appear relative z-10 flex justify-center gap-4 opacity-0 delay-300">
+            <div className="animate-appear relative z-10 flex flex-col justify-center gap-4 opacity-0 delay-300 md:flex-row">
               {buttons.map((button, index) => (
                 <Button
                   key={index}
                   variant={button.variant || "default"}
                   size="lg"
                   asChild
-                  className="inline-flex rounded-full px-8 py-7"
+                  className="inline-flex rounded-full md:px-8 md:py-7"
                 >
                   <a href={button.href} className="">
                     {button.icon}
