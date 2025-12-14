@@ -75,7 +75,7 @@ export default function Hero({
       )}
     >
       <div className="max-w-container mx-auto -mt-10 flex flex-col gap-12 pt-0 sm:gap-24">
-        <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
+        <div className="flex flex-col items-center gap-6 text-center">
           {badge !== false && badge}
           <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-3xl leading-tight font-bold tracking-tight text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl sm:leading-tight sm:tracking-tight md:text-7xl md:leading-tight">
             Riset{" "}
@@ -118,7 +118,7 @@ export default function Hero({
               Hanya Butuh 2 Menit
             </span>
           </h1>
-          <p className="text-md animate-appear text-muted-foreground relative z-10 max-w-[740px] font-medium text-balance opacity-0 delay-100 sm:text-xl">
+          <p className="animate-appear text-muted-foreground relative z-10 mb-10 max-w-2xl text-lg leading-relaxed font-medium opacity-0 delay-100">
             {description}
           </p>
           {buttons !== false && buttons.length > 0 && (
