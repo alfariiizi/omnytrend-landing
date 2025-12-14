@@ -80,8 +80,8 @@ const AiGrid: React.FC = () => {
     return (
         <section className="bg-gradient-to-b from-[#020617] to-[#0B1120] px-6 py-24">
             <div className="mx-auto max-w-6xl">
-                <h2 className="mb-16 text-center text-4xl font-bold md:text-5xl">
-                    Digerakkan <br />
+                <h2 className="mb-20 flex flex-col gap-4 text-center text-4xl font-bold md:text-5xl">
+                    Digerakkan
                     <span className="text-brand-purple">Sepenuhnya Oleh AI</span>
                 </h2>
 

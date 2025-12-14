@@ -40,7 +40,7 @@ export default function Hero({
     badge = (
         <Badge variant="outline" className="animate-appear border-brand/30 bg-brand/10">
             <span className="bg-brand-teal flex h-2 w-2 animate-pulse rounded-full"></span>
-            <span className="text-muted-foreground text-xs font-medium tracking-wide">Akses 14 hari gratis!</span>
+            <span className="text-muted-foreground text-xs font-medium tracking-wide">Free akses selama 14 hari !</span>
             <a href={siteConfig.registerUrl} className="flex items-center gap-1">
                 Daftar Sekarang
                 <ArrowRightIcon className="size-3" />
