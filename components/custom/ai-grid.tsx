@@ -87,7 +87,7 @@ const AiGrid: React.FC = () => {
 
                 <div className="grid gap-6 md:grid-cols-4">
                     {features.map((feature, idx) => (
-                        <div key={idx} className={`rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition duration-300 hover:bg-white/[0.05] ${feature.border} group`}>
+                        <div key={idx} className={`rounded-2xl border-2 border-white/5 bg-white/[0.02] p-6 transition duration-300 hover:bg-white/[0.05] ${feature.border} group`}>
                             <div
                                 className={`h-12 w-12 ${feature.bg} mb-4 flex items-center justify-center rounded-lg ${feature.color} transition duration-300 group-hover:scale-110 ${feature.shadow}`}>
                                 {feature.icon}
