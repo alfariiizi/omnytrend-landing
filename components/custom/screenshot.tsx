@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
 
-export default function HeroScreenshot() {
+export default function ScreenshotCustom() {
   return (
     <div className="w-full">
       <div className="group perspective-1000 relative mx-auto">

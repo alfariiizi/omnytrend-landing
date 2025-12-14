@@ -13,7 +13,7 @@ import { Mockup, MockupFrame } from "../../ui/mockup";
 import Screenshot from "../../ui/screenshot";
 import { Section } from "../../ui/section";
 import { TextLoop } from "@/components/motion-primitives/text-loop";
-import HeroScreenshot from "@/components/custom/hero-screenshot";
+import ScreenshotCustom from "@/components/custom/screenshot";
 
 interface HeroButtonProps {
   href: string;
@@ -35,7 +35,7 @@ interface HeroProps {
 
 export default function Hero({
   description = "Cukup tanya, dan biarkan AI menganalisis produk untukmu — mulai dari tren, performa, hingga rekomendasi strategi penjualan.",
-  mockup = <HeroScreenshot />,
+  mockup = <ScreenshotCustom />,
   badge = (
     <Badge
       variant="outline"
@@ -70,7 +70,7 @@ export default function Hero({
   return (
     <Section
       className={cn(
-        "fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0",
+        "fade-bottom overflow-hidden bg-transparent pb-0 sm:pb-0 md:pb-0",
         className,
       )}
     >
