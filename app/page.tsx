@@ -7,6 +7,7 @@ import Pricing from "../components/sections/pricing/default";
 import Stats from "../components/sections/stats/default";
 import FAQsSection from "@/components/sections/faq/faqs-4";
 import FeaturesCustom from "@/components/custom/features";
+import DataSources from "@/components/custom/data-source";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <FeaturesCustom />
+      <DataSources />
       <Items />
       <Pricing />
       <Testimonials />
