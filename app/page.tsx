@@ -5,9 +5,8 @@ import Hero from "../components/sections/hero/default";
 import Items from "../components/sections/items/default";
 import Pricing from "../components/sections/pricing/default";
 import Stats from "../components/sections/stats/default";
-import Features from "@/components/sections/feature/default";
 import FAQsSection from "@/components/sections/faq/faqs-4";
-import Navbar from "@/components/sections/navbar/default";
+import FeaturesCustom from "@/components/custom/features";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
 
       <Hero />
       <Stats />
-      <Features />
+      <FeaturesCustom />
       <Items />
       <Pricing />
       <Testimonials />

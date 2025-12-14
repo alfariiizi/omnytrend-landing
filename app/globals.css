@@ -297,3 +297,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #2563eb;
 }
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
