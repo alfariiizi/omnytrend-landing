@@ -2,12 +2,12 @@ import Testimonials from "@/components/sections/testimonial/default";
 import CTA from "../components/sections/cta/default";
 import Footer from "../components/sections/footer/default";
 import Hero from "../components/sections/hero/default";
-import Items from "../components/sections/items/default";
 import Pricing from "../components/sections/pricing/default";
 import Stats from "../components/sections/stats/default";
 import FAQsSection from "@/components/sections/faq/faqs-4";
 import FeaturesCustom from "@/components/custom/features";
 import DataSources from "@/components/custom/data-source";
+import AiGrid from "@/components/custom/ai-grid";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <Stats />
       <FeaturesCustom />
       <DataSources />
-      <Items />
+      <AiGrid />
       <Pricing />
       <Testimonials />
       <FAQsSection />
