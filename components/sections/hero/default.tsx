@@ -163,7 +163,7 @@ export default function Hero({
               /> */}
               <Mockup
                 type="responsive"
-                className="bg-background/90 w-full overflow-visible rounded-xl border-0"
+                className="bg-background/90 mx-auto w-full max-w-5xl overflow-visible rounded-xl border-0"
               >
                 {mockup}
               </Mockup>

@@ -22,7 +22,7 @@ export default function ScreenshotCustom() {
           </div>
 
           {/* Fake UI Content */}
-          <div className="relative flex min-h-[600px] flex-col items-center justify-center bg-gradient-to-b from-[#0F172A] to-[#020617] p-8 md:p-12">
+          <div className="relative flex h-[490px] flex-col items-center justify-center bg-gradient-to-b from-[#0F172A] to-[#020617] p-8 md:p-12">
             <Image
               src="/dashboard-analisis.png"
               alt={`OmniDashboard ${siteConfig.name}`}
