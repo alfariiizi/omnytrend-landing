@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Analisis Ecommerce",
-  url: "https://launchuicomponents.com",
+  name: "OmniTrend",
+  url: "/",
   getStartedUrl:
     "https://launchuicomponents.com/docs/getting-started/introduction",
   loginUrl: "https://app.launchuicomponents.com",

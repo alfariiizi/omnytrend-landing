@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRight, ArrowRightIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
@@ -13,6 +13,7 @@ import { Mockup, MockupFrame } from "../../ui/mockup";
 import Screenshot from "../../ui/screenshot";
 import { Section } from "../../ui/section";
 import { TextLoop } from "@/components/motion-primitives/text-loop";
+import HeroScreenshot from "@/components/custom/hero-screenshot";
 
 interface HeroButtonProps {
   href: string;
@@ -20,6 +21,7 @@ interface HeroButtonProps {
   variant?: ButtonProps["variant"];
   icon?: ReactNode;
   iconRight?: ReactNode;
+  arrow?: boolean;
 }
 
 interface HeroProps {
@@ -32,22 +34,16 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Riset Produk Hanya Cukup 2 Menit",
   description = "Cukup tanya, dan biarkan AI menganalisis produk untukmu — mulai dari tren, performa, hingga rekomendasi strategi penjualan.",
-  mockup = (
-    <Screenshot
-      srcLight="/dashboard-analisis.png"
-      srcDark="/dashboard-analisis.png"
-      alt={`Dashboard ${siteConfig.name}`}
-      width={1248}
-      height={765}
-      className="w-full"
-    />
-  ),
+  mockup = <HeroScreenshot />,
   badge = (
-    <Badge variant="outline" className="animate-appear">
-      <span className="text-muted-foreground">
-        Daftar sekarang dan dapatkan akses 14 hari gratis!
+    <Badge
+      variant="outline"
+      className="animate-appear border-brand/30 bg-brand/10"
+    >
+      <span className="bg-brand-teal flex h-2 w-2 animate-pulse rounded-full"></span>
+      <span className="text-muted-foreground text-xs font-medium tracking-wide">
+        Akses 14 hari gratis!
       </span>
       <a href={siteConfig.registerUrl} className="flex items-center gap-1">
         Daftar Sekarang
@@ -58,13 +54,15 @@ export default function Hero({
   buttons = [
     {
       href: siteConfig.registerUrl,
-      text: "Coba Gratis",
+      text: "Coba Gratis Sekarang",
       variant: "default",
+      arrow: true,
     },
     {
       href: siteConfig.loginUrl,
-      text: "Masuk Sekarang",
+      text: "Pelajari Lebih Lanjut",
       variant: "glow",
+      arrow: false,
     },
   ],
   className,
@@ -79,7 +77,7 @@ export default function Hero({
       <div className="max-w-container mx-auto -mt-10 flex flex-col gap-12 pt-0 sm:gap-24">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           {badge !== false && badge}
-          <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-3xl leading-tight font-semibold text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+          <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-3xl leading-tight font-bold tracking-tight text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl sm:leading-tight sm:tracking-tight md:text-7xl md:leading-tight">
             Riset{" "}
             <TextLoop
               className="overflow-y-clip"
@@ -116,7 +114,9 @@ export default function Hero({
               <span className="text-foreground">Keyword</span>
             </TextLoop>
             <br />
-            Hanya Butuh 2 Menit
+            <span className="bg-gradient-to-r from-[#00E7BE] via-[#2563EB] to-[#995CFF] bg-clip-text text-transparent">
+              Hanya Butuh 2 Menit
+            </span>
           </h1>
           <p className="text-md animate-appear text-muted-foreground relative z-10 max-w-[740px] font-medium text-balance opacity-0 delay-100 sm:text-xl">
             {description}
@@ -129,11 +129,15 @@ export default function Hero({
                   variant={button.variant || "default"}
                   size="lg"
                   asChild
+                  className="inline-flex rounded-full px-8 py-7"
                 >
-                  <a href={button.href}>
+                  <a href={button.href} className="">
                     {button.icon}
                     {button.text}
                     {button.iconRight}
+                    {button.arrow && (
+                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    )}
                   </a>
                 </Button>
               ))}
@@ -141,7 +145,7 @@ export default function Hero({
           )}
           {mockup !== false && (
             <div className="relative w-full pt-12">
-              <MockupFrame
+              {/* <MockupFrame
                 className="animate-appear opacity-0 delay-700"
                 size="small"
               >
@@ -155,7 +159,13 @@ export default function Hero({
               <Glow
                 variant="top"
                 className="animate-appear-zoom opacity-0 delay-1000"
-              />
+              /> */}
+              <Mockup
+                type="responsive"
+                className="bg-background/90 w-full overflow-visible rounded-xl border-0"
+              >
+                {mockup}
+              </Mockup>
             </div>
           )}
         </div>

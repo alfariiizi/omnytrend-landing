@@ -8,6 +8,8 @@
 @theme inline {
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-purple: var(--brand-purple);
   --color-light: var(--light);
   --color-light-foreground: var(--light-foreground);
   --color-background: var(--background);
@@ -43,7 +45,7 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
 
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-jakarta);
   --font-mono: var(--font-ibm-plex-mono);
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -117,19 +119,21 @@
     }
   }
   @keyframes marquee {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
     }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
     }
   }
 }
 
 :root {
   /* Accent colors */
-  --brand: oklch(0.6231 0.188 259.8145);
-  --brand-foreground: oklch(75.77% 0.159 55.91);
+  --brand: oklab(54.616% -0.02662 -0.21364);
+  --brand-foreground: oklab(48.821% -0.02123 -0.2162);
+  --brand-teal: oklab(82.76400000000001% -0.157 0.01741);
+  --brand-purple: oklab(62.566% 0.10206 -0.20636);
 
   /* Customized shadcn/ui colors */
   --background: oklch(1 0 0);
@@ -138,7 +142,7 @@
   --card-foreground: oklch(0.3211 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.3211 0 0);
-  --primary: oklch(0.6231 0.188 259.8145);
+  --primary: oklab(54.616% -0.02662 -0.21364);
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.967 0.0029 264.5419);
   --secondary-foreground: oklch(0.4461 0.0263 256.8018);
@@ -164,7 +168,7 @@
   --sidebar-accent-foreground: oklch(0.3791 0.1378 265.5222);
   --sidebar-border: oklch(0.9276 0.0058 264.5313);
   --sidebar-ring: oklch(0.6231 0.188 259.8145);
-  --font-sans: Inter, sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: Source Serif 4, serif;
   --font-mono: JetBrains Mono, monospace;
   --radius: 0.375rem;
@@ -200,17 +204,19 @@
 
 .dark {
   /* Accent colors */
-  --brand: oklch(0.6231 0.188 259.8145);
-  --brand-foreground: oklch(0.7 0.188 259.8145);
+  --brand: oklab(54.616% -0.02662 -0.21364);
+  --brand-foreground: oklab(48.821% -0.02123 -0.2162);
+  --brand-teal: oklab(82.76400000000001% -0.157 0.01741);
+  --brand-purple: oklab(62.566% 0.10206 -0.20636);
 
   /* Customized shadcn/ui colors */
-  --background: oklch(0.2046 0 0);
+  --background: oklch(12.88% 0.04062 264.709);
   --foreground: oklch(0.9219 0 0);
   --card: oklch(0.2686 0 0);
   --card-foreground: oklch(0.9219 0 0);
   --popover: oklch(0.2686 0 0);
   --popover-foreground: oklch(0.9219 0 0);
-  --primary: oklch(0.6231 0.188 259.8145);
+  --primary: oklab(54.616% -0.02662 -0.21364);
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.2686 0 0);
   --secondary-foreground: oklch(0.9219 0 0);
@@ -220,7 +226,7 @@
   --accent-foreground: oklch(0.8823 0.0571 254.1284);
   --destructive: oklch(0.6368 0.2078 25.3313);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.3715 0 0);
+  --border: oklch(0.885 0.006 286.033);
   --input: oklch(0.3715 0 0);
   --ring: oklch(0.6231 0.188 259.8145);
   --chart-1: oklch(0.7137 0.1434 254.624);
@@ -236,7 +242,7 @@
   --sidebar-accent-foreground: oklch(0.8823 0.0571 254.1284);
   --sidebar-border: oklch(0.3715 0 0);
   --sidebar-ring: oklch(0.6231 0.188 259.8145);
-  --font-sans: Inter, sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: Source Serif 4, serif;
   --font-mono: JetBrains Mono, monospace;
   --radius: 0.375rem;
@@ -271,15 +277,6 @@
 @layer base {
   * {
     @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;

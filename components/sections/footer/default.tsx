@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import LaunchUI from "../../logos/launch-ui";
+import OmniTrend from "../../logos/omnitrend";
 import {
   Footer,
   FooterBottom,
@@ -33,7 +33,7 @@ interface FooterProps {
 }
 
 export default function FooterSection({
-  logo = <LaunchUI />,
+  logo = <OmniTrend />,
   name = siteConfig.name,
   columns = [
     {

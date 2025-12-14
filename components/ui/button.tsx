@@ -5,21 +5,21 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center rounded-full justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
-          "text-primary-foreground shadow-sm dark:hover:from-primary/80 hover:from-primary/70 dark:hover:to-primary/70 hover:to-primary/90 bg-linear-to-b from-primary/60 to-primary/100 dark:from-primary/100 dark:to-primary/70 border-t-primary",
+          "text-primary-foreground rounded-full shadow-sm dark:hover:from-primary/80 hover:from-primary/70 dark:hover:to-primary/70 hover:to-primary/90 bg-linear-to-b from-primary/60 to-primary/100 dark:from-primary/100 dark:to-primary/70 border-t-primary",
         destructive:
-          "bg-destructive/30 text-destructive-foreground shadow-xs hover:bg-destructive/90",
+          "bg-destructive/30 rounded-full text-destructive-foreground shadow-xs hover:bg-destructive/90",
         outline:
-          "border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground",
-        glow: "glass-4 hover:glass-5 shadow-md",
+          "border border-input rounded-full bg-background shadow-xs hover:bg-accent hover:text-accent-foreground",
+        glow: "glass-4 shadow-md outline-2 -outline-offset-2 outline-white/10 hover:outline-brand",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-foreground underline-offset-4 hover:underline",
+          "bg-secondary rounded-full text-secondary-foreground shadow-xs hover:bg-secondary/80",
+        ghost: "hover:bg-accent rounded-full hover:text-accent-foreground",
+        link: "text-foreground rounded-full underline-offset-4 hover:underline",
       },
       size: {
         default: "h-9 px-4 py-2",

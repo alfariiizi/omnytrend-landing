@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import LaunchUI from "../../logos/launch-ui";
+import OmniTrend from "../../logos/omnitrend";
 import { Button, type ButtonProps } from "../../ui/button";
 import {
   Navbar as NavbarComponent,
@@ -40,7 +40,7 @@ interface NavbarProps {
 }
 
 export default function Navbar({
-  logo = <LaunchUI />,
+  logo = <OmniTrend />,
   name = siteConfig.name,
   homeUrl = siteConfig.url,
   mobileLinks = [
