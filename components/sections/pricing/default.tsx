@@ -81,7 +81,7 @@ export default function Pricing({
             <div className="mx-auto flex max-w-6xl flex-col items-center gap-20">
                 {(title || description) && (
                     <div className="flex flex-col items-center gap-8 px-4 text-center">
-                        {title && <h2 className="text-3xl leading-tight font-bold sm:text-5xl sm:leading-tight">{title}</h2>}
+                        {title && <h2 className="text-3xl leading-relaxed font-bold sm:text-5xl">{title}</h2>}
                         {description && <p className="text-muted-foreground max-w-[600px] text-base font-medium">{description}</p>}
                     </div>
                 )}

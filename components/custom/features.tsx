@@ -6,7 +6,7 @@ const FeaturesCustom: React.FC = () => {
         <section id="features" className="relative scroll-mt-[10vh] px-6 py-24">
             <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
                 {/* Feature 1 */}
-                <div className="glass-card group relative overflow-hidden rounded-2xl p-10 transition-all hover:-translate-y-2">
+                <div className="glass-card group relative overflow-hidden rounded-2xl p-4 transition-all hover:-translate-y-2 lg:p-10">
                     <div className="bg-brand pointer-events-none absolute top-0 right-0 h-32 w-32 rounded-full opacity-10 blur-[80px]"></div>
 
                     <div className="bg-brand/10 text-brand mb-6 inline-flex items-center justify-center rounded-xl p-3">
@@ -39,7 +39,7 @@ const FeaturesCustom: React.FC = () => {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="glass-card group relative overflow-hidden rounded-2xl p-10 transition-all hover:-translate-y-2">
+                <div className="glass-card group relative overflow-hidden rounded-2xl p-4 transition-all hover:-translate-y-2 lg:p-10">
                     <div className="bg-brand-purple pointer-events-none absolute top-0 right-0 h-32 w-32 rounded-full opacity-10 blur-[80px]"></div>
 
                     <div className="bg-brand-purple/10 text-brand-purple mb-6 inline-flex items-center justify-center rounded-xl p-3">

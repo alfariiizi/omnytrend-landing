@@ -69,7 +69,7 @@ export default function FooterSection({
     return (
         <Footer className="border-border dark:border-border/15 relative mx-auto w-full max-w-[1000px] border-t p-8">
             <div className="bg-brand absolute -top-1 right-1/2 h-2 w-10 translate-x-1/2 rounded-full"></div>
-            <FooterContent className="pt-30 pb-10 font-medium">
+            <FooterContent className="gap-10 pt-30 pb-10 font-medium md:gap-8">
                 <FooterColumn className="col-span-2 mb-14">
                     <div className="flex flex-col gap-6">
                         <div className="flex gap-2">{logo}</div>

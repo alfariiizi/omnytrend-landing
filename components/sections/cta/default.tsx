@@ -37,10 +37,10 @@ export default function CTA({
     return (
         <Section className={cn("group relative flex h-[600px] items-center justify-center overflow-hidden", className)}>
             <div className="max-w-container relative z-10 mx-auto flex flex-col items-center gap-6 text-center sm:gap-8">
-                <h2 className="max-w-[900px] text-3xl leading-tight font-semibold sm:text-5xl sm:leading-tight">{title}</h2>
+                <h2 className="max-w-[900px] text-3xl leading-relaxed font-semibold sm:text-5xl sm:leading-relaxed">{title}</h2>
                 <p className="text-md text-muted-foreground max-w-[900px] font-medium sm:text-lg">{desctiption}</p>
                 {buttons !== false && buttons.length > 0 && (
-                    <div className="flex justify-center gap-4">
+                    <div className="mt-10 flex justify-center gap-4 md:mt-4">
                         {buttons.map((button, index) => (
                             <Button
                                 key={index}

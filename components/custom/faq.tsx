@@ -17,13 +17,13 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle })
                 onClick={onToggle}
                 className="hover:text-brand flex w-full items-center justify-between p-5 text-left font-medium text-gray-200 transition"
                 aria-expanded={isOpen}>
-                <span>{question}</span>
+                <span className="font-bold">{question}</span>
                 <ChevronDown size={20} className={`text-brand transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
             </button>
 
             <div className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
                 <div className="overflow-hidden">
-                    <div className="px-5 pb-5 text-sm text-gray-400">{answer}</div>
+                    <div className="px-5 pb-5 leading-relaxed text-gray-400">{answer}</div>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ const FAQ: React.FC = () => {
     return (
         <section id="faq" className="scroll-mt-[10vh] border-t border-white/5 px-6 py-20">
             <div className="mx-auto max-w-3xl">
-                <h2 className="mb-12 text-center text-5xl leading-tight font-bold">Pertanyaan Pengguna</h2>
+                <h2 className="mb-12 text-center text-3xl leading-relaxed font-bold sm:text-5xl sm:leading-relaxed">Pertanyaan Pengguna</h2>
 
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (

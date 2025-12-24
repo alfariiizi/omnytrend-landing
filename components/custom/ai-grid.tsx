@@ -80,20 +80,24 @@ const AiGrid: React.FC = () => {
     return (
         <section id="ai-driven" className="scroll-mt-[10vh] bg-gradient-to-b from-[#020617] to-[#0B1120] px-6 py-24">
             <div className="mx-auto max-w-6xl">
-                <h2 className="mb-20 flex flex-col gap-4 text-center text-4xl font-bold md:text-5xl">
+                <h2 className="mb-8 flex flex-col gap-4 text-center text-3xl font-bold md:mb-20 md:text-5xl">
                     Digerakkan
                     <span className="text-brand-purple">Sepenuhnya Oleh AI</span>
                 </h2>
 
-                <div className="grid gap-6 md:grid-cols-4">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                     {features.map((feature, idx) => (
-                        <div key={idx} className={`rounded-2xl border-2 border-white/5 bg-white/[0.02] p-6 transition duration-300 hover:bg-white/[0.05] ${feature.border} group`}>
+                        <div
+                            key={idx}
+                            className={`flex flex-row gap-6 rounded-2xl border-2 border-white/5 bg-white/[0.02] p-4 transition duration-300 hover:bg-white/[0.05] md:flex-col md:gap-0 md:p-6 ${feature.border} group`}>
                             <div
                                 className={`h-12 w-12 ${feature.bg} mb-4 flex items-center justify-center rounded-lg ${feature.color} transition duration-300 group-hover:scale-110 ${feature.shadow}`}>
                                 {feature.icon}
                             </div>
-                            <h4 className="mb-2 font-semibold text-white">{feature.title}</h4>
-                            <p className="text-sm text-gray-400">{feature.desc}</p>
+                            <div>
+                                <h4 className="mb-2 font-semibold text-white">{feature.title}</h4>
+                                <p className="text-sm text-gray-400">{feature.desc}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

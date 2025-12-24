@@ -49,7 +49,7 @@ export default function Stats({
     className,
 }: StatsProps) {
     return (
-        <Section id="stats" className={`scroll-mt-[40vh] ${className ?? ""}`}>
+        <Section id="stats" className={`scroll-mt-[40vh] px-6 ${className ?? ""}`}>
             <div className="container mx-auto max-w-[960px]">
                 {items !== false && items.length > 0 && (
                     <div className="grid grid-cols-2 gap-12 sm:grid-cols-4">

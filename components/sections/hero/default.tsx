@@ -64,11 +64,11 @@ export default function Hero({
     className,
 }: HeroProps) {
     return (
-        <Section className={cn("fade-bottom mt-20 overflow-hidden bg-transparent md:mt-10", className)}>
+        <Section className={cn("fade-bottom mt-20 overflow-hidden bg-transparent px-6 md:mt-10", className)}>
             <div className="max-w-container mx-auto flex flex-col gap-12 pt-0">
                 <div className="flex flex-col items-center gap-6 text-center">
                     {badge !== false && badge}
-                    <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-3xl leading-tight font-bold tracking-tight text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl sm:leading-tight sm:tracking-tight md:text-7xl md:leading-tight">
+                    <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground tracking-relaleading-relaxed sm:tracking-relaleading-relaxed relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-relaxed font-black text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl md:text-7xl md:leading-tight">
                         Riset{" "}
                         <TextLoop
                             className="overflow-y-clip"
