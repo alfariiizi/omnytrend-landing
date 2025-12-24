@@ -32,7 +32,7 @@ export default function FooterSection({
     name = siteConfig.name,
     columns = [
         {
-            title: "Menu",
+            title: "Menu Utama",
             links: [
                 { text: "OmniTrend", href: "#header" },
                 { text: "Sumber Data", href: "#data-source" },
@@ -43,11 +43,10 @@ export default function FooterSection({
             ],
         },
         {
-            title: "Term & Service",
+            title: "Lainnya",
             links: [
                 { text: "About", href: siteConfig.url },
                 { text: "Careers", href: siteConfig.url },
-                { text: "Blog", href: siteConfig.url },
             ],
         },
         {
