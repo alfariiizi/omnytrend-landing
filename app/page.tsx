@@ -12,7 +12,7 @@ import FAQ from "@/components/custom/faq"
 
 export default function Home() {
     return (
-        <main className="bg-background text-foreground min-h-screen w-full overflow-hidden">
+        <main id="header" className="bg-background text-foreground min-h-screen w-full scroll-m-[10vh] overflow-hidden">
             <div className="fade-top absolute h-[800px] w-full overflow-hidden">
                 {/* Background Grid & Texture - Refined: Larger, Fainter, and Masked */}
                 <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_2px,transparent_2px),linear-gradient(to_bottom,#ffffff05_2px,transparent_2px)] [mask-image:linear-gradient(to_bottom,black_20%,transparent_90%)] bg-[size:50px_50px]"></div>

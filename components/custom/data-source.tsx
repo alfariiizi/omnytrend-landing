@@ -3,7 +3,7 @@ import React from "react"
 
 const DataSources: React.FC = () => {
     return (
-        <section className="mb-16 border-y border-white/5 bg-[#020617] py-12 text-center">
+        <section id="data-source" className="mb-16 scroll-mt-[40vh] border-y border-white/5 bg-[#020617] py-12 text-center">
             <p className="mb-10 text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase">Sumber Data Terpercaya</p>
             <div className="flex flex-wrap items-center justify-center gap-10 opacity-60 grayscale transition-all duration-700 hover:opacity-100 hover:grayscale-0 md:gap-20">
                 <div className="group flex cursor-pointer items-center gap-3 text-2xl font-bold text-white">

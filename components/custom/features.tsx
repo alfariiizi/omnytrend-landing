@@ -3,7 +3,7 @@ import { MessageSquare, BarChart2 } from "lucide-react"
 
 const FeaturesCustom: React.FC = () => {
     return (
-        <section className="relative px-6 py-24">
+        <section id="features" className="relative scroll-mt-[10vh] px-6 py-24">
             <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
                 {/* Feature 1 */}
                 <div className="glass-card group relative overflow-hidden rounded-2xl p-10 transition-all hover:-translate-y-2">

@@ -65,7 +65,7 @@ export default function Hero({
 }: HeroProps) {
     return (
         <Section className={cn("fade-bottom mt-20 overflow-hidden bg-transparent md:mt-10", className)}>
-            <div className="max-w-container mx-auto -mt-10 flex flex-col gap-12 pt-0">
+            <div className="max-w-container mx-auto flex flex-col gap-12 pt-0">
                 <div className="flex flex-col items-center gap-6 text-center">
                     {badge !== false && badge}
                     <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-3xl leading-tight font-bold tracking-tight text-balance whitespace-pre-wrap text-transparent drop-shadow-2xl sm:text-5xl sm:leading-tight sm:tracking-tight md:text-7xl md:leading-tight">
@@ -112,7 +112,12 @@ export default function Hero({
                     {buttons !== false && buttons.length > 0 && (
                         <div className="animate-appear relative z-10 flex flex-col justify-center gap-4 opacity-0 delay-300 md:flex-row">
                             {buttons.map((button, index) => (
-                                <Button key={index} variant={button.variant || "default"} size="lg" asChild className="inline-flex rounded-full md:px-8 md:py-7">
+                                <Button
+                                    key={index}
+                                    variant={button.variant || "default"}
+                                    size="lg"
+                                    asChild
+                                    className="hover:shadow-brand inline-flex rounded-full transition-all ease-out hover:scale-105 hover:shadow-[0_0_50px] md:px-8 md:py-7">
                                     <a href={button.href} className="">
                                         {button.icon}
                                         {button.text}

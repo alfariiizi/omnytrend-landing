@@ -53,7 +53,7 @@ const FAQ: React.FC = () => {
     }
 
     return (
-        <section className="border-t border-white/5 px-6 py-20">
+        <section id="faq" className="scroll-mt-[10vh] border-t border-white/5 px-6 py-20">
             <div className="mx-auto max-w-3xl">
                 <h2 className="mb-12 text-center text-5xl leading-tight font-bold">Pertanyaan Pengguna</h2>
 

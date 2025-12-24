@@ -31,10 +31,12 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <TestimonialsSection
-            title="Dipercaya oleh ribuan seller di Indonesia"
-            description="Lihat apa kata mereka tentang layanan kami yang telah membantu mereka mencapai tujuan bisnis mereka."
-            testimonials={testimonials}
-        />
+        <section id="testimonials" className="scroll-mt-[20vh]">
+            <TestimonialsSection
+                title="Dipercaya oleh ribuan seller di Indonesia"
+                description="Lihat apa kata mereka tentang layanan kami yang telah membantu mereka mencapai tujuan bisnis mereka."
+                testimonials={testimonials}
+            />
+        </section>
     )
 }

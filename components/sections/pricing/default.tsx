@@ -77,7 +77,7 @@ export default function Pricing({
     className = "",
 }: PricingProps) {
     return (
-        <Section className={cn("mt-20", className)}>
+        <Section id="pricing" className={cn("mt-20 scroll-mt-[10vh]", className)}>
             <div className="mx-auto flex max-w-6xl flex-col items-center gap-20">
                 {(title || description) && (
                     <div className="flex flex-col items-center gap-8 px-4 text-center">

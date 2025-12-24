@@ -15,10 +15,10 @@ const features = [
         icon: <Database size={24} />,
         title: "Scraping Cerdas",
         desc: "Ekstrak harga & produk presisi tinggi.",
-        color: "text-brand-blue",
-        bg: "bg-brand-blue/10",
+        color: "text-brand",
+        bg: "bg-brand/10",
         shadow: "shadow-[0_0_15px_rgba(37,99,235,0.1)]",
-        border: "hover:border-brand-blue/30",
+        border: "hover:border-brand/30",
     },
     {
         icon: <BarChart3 size={24} />,
@@ -33,10 +33,10 @@ const features = [
         icon: <MessageCircle size={24} />,
         title: "Chat AI",
         desc: "Tanya jawab data dalam bahasa manusia.",
-        color: "text-brand-darkBlue",
-        bg: "bg-brand-darkBlue/10",
+        color: "text-brand",
+        bg: "bg-brand/10",
         shadow: "shadow-[0_0_15px_rgba(29,78,216,0.1)]",
-        border: "hover:border-brand-darkBlue/30",
+        border: "hover:border-brand/30",
     },
     {
         icon: <PieChart size={24} />,
@@ -51,10 +51,10 @@ const features = [
         icon: <Search size={24} />,
         title: "Real-time",
         desc: "Pantau kompetitor detik ini juga.",
-        color: "text-brand-blue",
-        bg: "bg-brand-blue/10",
+        color: "text-brand",
+        bg: "bg-brand/10",
         shadow: "shadow-[0_0_15px_rgba(37,99,235,0.1)]",
-        border: "hover:border-brand-blue/30",
+        border: "hover:border-brand/30",
     },
     {
         icon: <ShieldCheck size={24} />,
@@ -69,16 +69,16 @@ const features = [
         icon: <Rocket size={24} />,
         title: "Terus Belajar",
         desc: "Model AI berkembang setiap hari.",
-        color: "text-brand-darkBlue",
-        bg: "bg-brand-darkBlue/10",
+        color: "text-brand",
+        bg: "bg-brand/10",
         shadow: "shadow-[0_0_15px_rgba(29,78,216,0.1)]",
-        border: "hover:border-brand-darkBlue/30",
+        border: "hover:border-brand/30",
     },
 ]
 
 const AiGrid: React.FC = () => {
     return (
-        <section className="bg-gradient-to-b from-[#020617] to-[#0B1120] px-6 py-24">
+        <section id="ai-driven" className="scroll-mt-[10vh] bg-gradient-to-b from-[#020617] to-[#0B1120] px-6 py-24">
             <div className="mx-auto max-w-6xl">
                 <h2 className="mb-20 flex flex-col gap-4 text-center text-4xl font-bold md:text-5xl">
                     Digerakkan
